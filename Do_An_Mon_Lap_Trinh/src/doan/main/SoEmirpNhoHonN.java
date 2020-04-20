@@ -10,8 +10,9 @@ public class SoEmirpNhoHonN {
 		thaotac.NhapXuat.xuatSo(number);
 
 		boolean ketQua = true;
-
+		if (number > 13) {
 		System.out.println("Cac so Emirp be hon " + number + " la: ");
+		}
 		for (int i = 1; i <= number; i++) {
 			if (thaotac.XacDinhSoDau.soDauChanLe(i) == false) {
 				ketQua = false;
