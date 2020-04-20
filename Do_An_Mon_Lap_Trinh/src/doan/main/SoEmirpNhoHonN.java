@@ -3,7 +3,7 @@ package doan.main;
 public class SoEmirpNhoHonN {
 
 	public static void main(String[] args) {
-		System.out.println(">> CHUONG TRINH XAC DINH SO EMIRP <<");
+		System.out.println(">> CHUONG TRINH XAC DINH SO EMIRP NHO HON <<");
 		System.out.println();
 
 		int number = thaotac.NhapXuat.nhapSo();
@@ -26,7 +26,12 @@ public class SoEmirpNhoHonN {
 			} else {
 				ketQua = false;
 			}
+			if (number <= 13) {
+				system.out.println("Khong co so Emirp nho hon " + number);
+			}
+			else {
 			thaotac.NhapXuat.chiSoEmirp(ketQua, i);
+			}
 		}
 	}
 
