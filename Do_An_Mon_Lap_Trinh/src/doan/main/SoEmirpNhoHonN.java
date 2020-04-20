@@ -12,7 +12,7 @@ public class SoEmirpNhoHonN {
 		boolean ketQua = true;
 
 		System.out.println("Cac so Emirp be hon " + number + " la: ");
-		for (int i = 1; i <= number; i++) {
+		for (int i = 13; i <= number; i++) {
 			if (thaotac.XacDinhSoDau.soDauChanLe(i) == false) {
 				ketQua = false;
 			} else if (number < 13) {
@@ -26,12 +26,13 @@ public class SoEmirpNhoHonN {
 			} else {
 				ketQua = false;
 			}
-			if (number <= 13) {
-				system.out.println("Khong co so Emirp nho hon " + number);
-			}
-			else {
+			if (number > 13) {
 			thaotac.NhapXuat.chiSoEmirp(ketQua, i);
 			}
+		}
+		
+		if (number <= 13) {
+			system.out.println("Khong co so Emirp be hon " + number);
 		}
 	}
 
