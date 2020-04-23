@@ -14,9 +14,9 @@ public class SoEmirpNhoHonN {
 		System.out.println("Cac so Emirp be hon " + number + " la: ");
 		}
 		for (int i = 1; i <= number; i++) {
-			if (thaotac.XacDinhSoDau.soDauChanLe(i) == false) {
+			if (number < 13) {
 				ketQua = false;
-			} else if (number < 13) {
+			} else if (thaotac.XacDinhSoDau.soDauChanLe(i) == false) {
 				ketQua = false;
 			} else if (thaotac.XacDinh.soNguyenTo(i) == false) {
 				ketQua = false;
