@@ -10,9 +10,9 @@ public class SoEmirp {
 		thaotac.NhapXuat.xuatSo(number);
 
 		boolean ketQua = true;
-		if (thaotac.XacDinhSoDau.soDauChanLe(number) == false) {
+		 if (number < 13) {
 			ketQua = false;
-		} else if (number < 13) {
+		} else if (thaotac.XacDinhSoDau.soDauChanLe(number) == false) {
 			ketQua = false;
 		} else if (thaotac.XacDinh.soNguyenTo(number) == false) {
 			ketQua = false;
