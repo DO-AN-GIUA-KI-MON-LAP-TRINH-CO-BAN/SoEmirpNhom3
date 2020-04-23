@@ -7,10 +7,8 @@ public class NhapXuat {
 
 	public static int nhapSo() {
 		int number = 0;
-		do {
 			System.out.print(">> Vui long nhap so: ");
 			number = scan.nextInt();
-		} while (number < 0);
 		return number;
 	}
 
